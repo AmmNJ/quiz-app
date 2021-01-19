@@ -1,0 +1,28 @@
+{
+  "name": "quiz-app",
+  "version": "0.0.1",
+  "scripts": {
+    "prettier:write": "prettier --write .",
+    "stylelint": "npx stylelint \"**/*.css\"",
+    "test": "htmlhint && prettier --check . && npm run stylelint"
+  },
+  "keywords": [],
+  "author": "Jeremias Erbs <jerry@badabam.de> (https://badabam.de)",
+  "license": "ISC",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/badabam/quiz-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/badabam/quiz-app/issues"
+  },
+  "homepage": "https://github.com/badabam/quiz-app#readme",
+  "description": "",
+  "devDependencies": {
+    "htmlhint": "^0.14.2",
+    "prettier": "2.2.1",
+    "stylelint": "^13.8.0",
+    "stylelint-config-standard": "^20.0.0"
+  }
+}
