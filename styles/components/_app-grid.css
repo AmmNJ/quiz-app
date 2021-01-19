@@ -1,0 +1,25 @@
+.app-grid {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  height: 100vh;
+}
+
+.app-grid__header {
+  background-color: salmon;
+  grid-area: header;
+}
+
+.app-grid__main {
+  background-color: plum;
+  grid-area: main;
+  overflow: scroll;
+}
+
+.app-grid__footer {
+  background-color: teal;
+  grid-area: footer;
+}
