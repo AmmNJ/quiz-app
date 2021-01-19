@@ -2,9 +2,9 @@
   "name": "quiz-app",
   "version": "0.0.1",
   "scripts": {
+    "start": "live-server --no-css-inject --port=4000",
     "prettier:write": "prettier --write .",
     "stylelint": "npx stylelint \"**/*.css\"",
-    "start": "live-server",
     "test": "htmlhint && prettier --check . && npm run stylelint"
   },
   "keywords": [],
