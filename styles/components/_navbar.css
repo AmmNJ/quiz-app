@@ -1,0 +1,17 @@
+.flaticon-referal {
+  font-size: 8px;
+  text-align: center;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.navbar__item {
+  width: 28px;
+  height: auto;
+  filter: saturate(0%);
+}
