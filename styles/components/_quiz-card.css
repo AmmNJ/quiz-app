@@ -10,11 +10,11 @@
 }
 
 .quiz-card__bookmark {
-  width: 30px;
-  height: auto;
+  font-size: 30px;
   position: absolute;
   right: 10px;
   top: -10px;
+  color: #fff;
 }
 
 .quiz-card__heading {

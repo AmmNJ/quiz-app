@@ -11,7 +11,6 @@
 }
 
 .navbar__item {
-  width: 28px;
-  height: auto;
-  filter: saturate(0%);
+  font-size: 26px;
+  color: #fff;
 }
