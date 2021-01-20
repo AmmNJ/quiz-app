@@ -1,16 +1,10 @@
-.flaticon-referal {
-  font-size: 8px;
-  text-align: center;
-}
-
 .navbar {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-items: center;
-  align-items: center;
+  place-items: center;
 }
 
 .navbar__item {
   font-size: 26px;
-  color: #fff;
+  color: var(--color-white);
 }

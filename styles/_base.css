@@ -3,10 +3,12 @@
 }
 
 body {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Avenir Next', sans-serif;
   font-size: 112.5%;
   line-height: 1.5;
   margin: 0;
+  background: var(--color-white);
+  color: var(--color-dark);
 }
 
 h1,
@@ -18,4 +20,8 @@ h3 {
 input,
 button {
   font-size: 1em;
+}
+
+a {
+  text-decoration: none;
 }

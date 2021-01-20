@@ -5,16 +5,15 @@
 }
 
 .app-grid__header {
-  background-color: salmon;
   display: grid;
   place-items: center;
+  background-color: var(--color-dark);
 }
 
 .app-grid__main {
-  background-color: plum;
   overflow-y: auto;
 }
 
 .app-grid__footer {
-  background-color: teal;
+  background-color: var(--color-dark);
 }
