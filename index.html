@@ -14,18 +14,25 @@
 
     <main class="app-grid__main">
       <section class="quiz-card">
+        <img
+          class="quiz-card__bookmark"
+          src="images/001-bookmark.png"
+          alt="Bookmark question"
+        />
         <h2 class="quiz-card__heading">QUESTION</h2>
         <p class="quiz-card__question">
           To which continent does Greenland belong?
         </p>
-        <details class="quiz-card__answer-details">
+        <details class="quiz-card__solution">
           <summary>Show answer</summary>
           <p>The answer is North America.</p>
         </details>
-        <button class="quiz-card__answer-button">Asia</button>
-        <button class="quiz-card__answer-button">Europe</button>
-        <button class="quiz-card__answer-button">North America</button>
-        <button class="quiz-card__answer-button">Australia</button>
+        <div class="quiz-card__answer-area">
+          <button class="quiz-card__answer-area__button">Asia</button>
+          <button class="quiz-card__answer-area__button">Europe</button>
+          <button class="quiz-card__answer-area__button">North America</button>
+          <button class="quiz-card__answer-area__button">Australia</button>
+        </div>
       </section>
 
       <div class="flaticon-referal">
@@ -37,10 +44,18 @@
       </div>
     </main>
     <footer class="app-grid__footer navbar">
-      <img class="navbar__item" src="images/003-home.png" alt="" />
-      <img class="navbar__item" src="images/001-bookmark.png" alt="" />
-      <img class="navbar__item" src="images/002-plus.png" alt="" />
-      <img class="navbar__item" src="images/004-settings.png" alt="" />
+      <img
+        class="navbar__item"
+        src="images/003-home.png"
+        alt="Back to landing page"
+      />
+      <img
+        class="navbar__item"
+        src="images/001-bookmark.png"
+        alt="Bookmark question"
+      />
+      <img class="navbar__item" src="images/002-plus.png" alt="Add question" />
+      <img class="navbar__item" src="images/004-settings.png" alt="Settings" />
     </footer>
   </body>
 </html>

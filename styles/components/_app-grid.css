@@ -6,11 +6,13 @@
 
 .app-grid__header {
   background-color: salmon;
+  display: grid;
+  place-items: center;
 }
 
 .app-grid__main {
   background-color: plum;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .app-grid__footer {

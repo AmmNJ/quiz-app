@@ -8,12 +8,12 @@
     "test": "htmlhint && prettier --check . && npm run stylelint"
   },
   "keywords": [],
-  "author": "Jeremias Erbs <jerry@badabam.de> (https://badabam.de)",
+  "author": "Nils Ammersken <nilsammersken@web.de>",
   "license": "ISC",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/badabam/quiz-app.git"
+    "url": "git+https://github.com/AmmNJ/quiz-app.git"
   },
   "bugs": {
     "url": "https://github.com/badabam/quiz-app/issues"
