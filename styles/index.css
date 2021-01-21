@@ -1,3 +1,5 @@
 @import '_base.css';
-@import 'components/_app-grid.css';
-@import 'components/_navbar.css';
+@import '_variables.css';
+@import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
+@import '../components/app-grid.css';
+@import '../components/navbar.css';
