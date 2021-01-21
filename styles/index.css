@@ -1,7 +1,8 @@
 @import '_base.css';
 @import '_variables.css';
-@import 'components/_app-grid.css';
+@import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
+@import '../components/app-grid.css';
 @import 'components/_header.css';
-@import 'components/_navbar.css';
+@import '../components/navbar.css';
 @import 'components/_page-title.css';
 @import 'components/_quiz-card.css';
