@@ -5,7 +5,9 @@
     "start": "live-server --no-css-inject --port=4000",
     "prettier:write": "prettier --write .",
     "stylelint": "npx stylelint \"**/*.css\"",
-    "test": "htmlhint && prettier --check . && npm run stylelint"
+    "test": "htmlhint && prettier --check . && npm run stylelint",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [],
   "author": "Jeremias Erbs <jerry@badabam.de> (https://badabam.de)",
@@ -21,10 +23,20 @@
   "homepage": "https://github.com/badabam/quiz-app#readme",
   "description": "",
   "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@storybook/addon-actions": "^6.1.14",
+    "@storybook/addon-essentials": "^6.1.14",
+    "@storybook/addon-links": "^6.1.14",
+    "@storybook/html": "^6.1.14",
+    "babel-loader": "^8.2.2",
     "htmlhint": "^0.14.2",
     "live-server": "^1.2.1",
     "prettier": "2.2.1",
     "stylelint": "^13.8.0",
+    "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2"
   }
 }

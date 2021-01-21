@@ -1,0 +1,10 @@
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+}
+
+.navbar__item {
+  font-size: 26px;
+  color: var(--color-white);
+}
