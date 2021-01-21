@@ -4,15 +4,6 @@
   height: 100vh;
 }
 
-.app-grid__header {
-  background-color: salmon;
-}
-
 .app-grid__main {
-  background-color: plum;
-  overflow-y: scroll;
-}
-
-.app-grid__footer {
-  background-color: teal;
+  overflow-y: auto;
 }
