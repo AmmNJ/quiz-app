@@ -34,7 +34,7 @@
   justify-items: center;
 }
 
-.quiz-card__solution__button {
+.quiz-card__button {
   background-color: var(--color-violet);
   color: var(--color-white);
   padding: 10px;
@@ -51,7 +51,7 @@
   margin: 0;
 }
 
-.quiz-card__tag-area__tags {
+.quiz-card__tags {
   font-size: 12px;
   background-color: var(--color-lightgrey);
   padding: 5px 5px;
