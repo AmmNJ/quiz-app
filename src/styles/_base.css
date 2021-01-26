@@ -9,6 +9,7 @@ body {
   margin: 0;
   background: var(--color-white);
   color: var(--color-dark);
+  position: relative;
 }
 
 h1,
@@ -24,4 +25,11 @@ button {
 
 a {
   text-decoration: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  height: 48px;
 }

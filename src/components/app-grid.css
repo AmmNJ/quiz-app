@@ -1,6 +1,6 @@
 .app-grid {
   display: grid;
-  grid-template-rows: 48px auto 48px;
+  grid-template-rows: auto 48px;
   height: 100vh;
 }
 

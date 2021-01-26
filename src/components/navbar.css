@@ -1,6 +1,9 @@
 .footer {
   background-color: var(--color-dark);
   display: grid;
+  position: fixed;
+  left: 50;
+  top: 100;
 }
 
 .navbar {
@@ -12,4 +15,10 @@
 .navbar__item {
   font-size: 26px;
   color: var(--color-white);
+  border: none;
+  background-color: transparent;
+}
+
+.navbar__item--active {
+  color: var(--color-active);
 }

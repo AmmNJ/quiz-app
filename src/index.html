@@ -7,35 +7,89 @@
     <link rel="stylesheet" href="styles/index.css" />
     <script defer type="module" src="./js/index.js"></script>
   </head>
-
   <body class="app-grid">
-    <header class="header">
-      <h1 class="header__page-title">QUIZ-APP</h1>
-    </header>
+    <section class="pageSection" data-js="pageHome">
+      <header class="header">
+        <h1 class="header__page-title">QUIZ-APP</h1>
+      </header>
+      <main class="app-grid__main">
+        <section class="quiz-card">
+          <span
+            class="fas fa-bookmark quiz-card__bookmark"
+            role="button"
+          ></span>
+          <h2 class="quiz-card__heading">QUESTION #1</h2>
+          <p class="quiz-card__question">What does SEO mean?</p>
+          <div class="quiz-card__solution">
+            <button class="quiz-card__button">Show answer</button>
+            <p>Search Engine Optimization.</p>
+          </div>
+          <ul class="quiz-card__tag-area">
+            <li class="quiz-card__tags">seo</li>
+            <li class="quiz-card__tags">web development</li>
+            <li class="quiz-card__tags">programming</li>
+            <li class="quiz-card__tags">beginner</li>
+          </ul>
+        </section>
+      </main>
+    </section>
 
-    <main class="app-grid__main">
-      <section class="quiz-card">
-        <span class="fas fa-bookmark quiz-card__bookmark" role="button"></span>
-        <h2 class="quiz-card__heading">QUESTION #1</h2>
-        <p class="quiz-card__question">What does SEO mean?</p>
-        <div class="quiz-card__solution">
-          <button class="quiz-card__button">Show answer</button>
-          <p>Search Engine Optimization.</p>
-        </div>
-        <ul class="quiz-card__tag-area">
-          <li class="quiz-card__tags">seo</li>
-          <li class="quiz-card__tags">web development</li>
-          <li class="quiz-card__tags">programming</li>
-          <li class="quiz-card__tags">beginner</li>
-        </ul>
-      </section>
-    </main>
+    <section hidden class="pageSection" data-js="pageBookmark">
+      <header class="header">
+        <h1 class="header__page-title">BOOKMARK</h1>
+      </header>
+      <main class="app-grid__main">
+        <section class="quiz-card">
+          <span
+            class="fas fa-bookmark quiz-card__bookmark"
+            role="button"
+          ></span>
+          <h2 class="quiz-card__heading">QUESTION #1</h2>
+          <p class="quiz-card__question">What does SEO mean?</p>
+          <div class="quiz-card__solution">
+            <button class="quiz-card__button">Show answer</button>
+            <p>Search Engine Optimization.</p>
+          </div>
+          <ul class="quiz-card__tag-area">
+            <li class="quiz-card__tags">seo</li>
+            <li class="quiz-card__tags">web development</li>
+            <li class="quiz-card__tags">programming</li>
+            <li class="quiz-card__tags">beginner</li>
+          </ul>
+        </section>
+        <section class="quiz-card">
+          <span
+            class="fas fa-bookmark quiz-card__bookmark"
+            role="button"
+          ></span>
+          <h2 class="quiz-card__heading">QUESTION #2</h2>
+          <p class="quiz-card__question">What does SEO mean?</p>
+          <div class="quiz-card__solution">
+            <button class="quiz-card__button">Show answer</button>
+            <p>Search Engine Optimization.</p>
+          </div>
+          <ul class="quiz-card__tag-area">
+            <li class="quiz-card__tags">seo</li>
+            <li class="quiz-card__tags">web development</li>
+            <li class="quiz-card__tags">programming</li>
+            <li class="quiz-card__tags">beginner</li>
+          </ul>
+        </section>
+      </main>
+    </section>
+
     <footer class="footer">
       <nav class="navbar">
-        <a class="fas fa-home navbar__item" href="#"></a>
-        <a class="fas fa-bookmark navbar__item" href="bookmarks.html"></a>
-        <a class="fas fa-plus-circle navbar__item" href=""></a>
-        <a class="fas fa-cog navbar__item" href=""></a>
+        <button data-js="navButton1" class="fas fa-home navbar__item"></button>
+        <button
+          data-js="navButton2"
+          class="fas fa-bookmark navbar__item"
+        ></button>
+        <button
+          data-js="navButton3"
+          class="fas fa-plus-circle navbar__item"
+        ></button>
+        <button data-js="navButton4" class="fas fa-cog navbar__item"></button>
       </nav>
     </footer>
   </body>
