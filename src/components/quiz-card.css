@@ -1,8 +1,8 @@
 .quiz-card {
-  margin: 15px 20px 30px;
+  margin: 0 0 30px;
   padding: 10px;
   height: auto;
-  border-radius: 18px;
+  border-radius: 8px;
   box-shadow: 0 4px 6px 0 var(--dropShadow-black),
     0 6px 14px 0 var(--dropShadow-black);
   position: relative;
@@ -56,6 +56,6 @@
   background-color: var(--color-lightgrey);
   padding: 5px 5px;
   margin: 2px 2px;
-  border-radius: 4px;
+  border-radius: 8px;
   font-weight: 600;
 }
