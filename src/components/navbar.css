@@ -13,3 +13,7 @@
   font-size: 26px;
   color: var(--color-white);
 }
+
+.navbar__item--active {
+  color: var(--color-lightviolet);
+}

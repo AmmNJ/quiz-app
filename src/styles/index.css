@@ -6,3 +6,4 @@
 @import '../components/navbar.css';
 @import '../components/quiz-card.css';
 @import '../components/create-question.css';
+@import './_utility.css';
