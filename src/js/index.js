@@ -3,7 +3,6 @@ const pageHome = getElement('main-home')
 const pageBookmark = getElement('main-bookmark')
 const pageCreate = getElement('main-create')
 const quizCards = document.querySelectorAll('[data-js="quiz-card"]')
-
 const navButton1 = getElement('navHome')
 const navButton2 = getElement('navBookmark')
 const navButton3 = getElement('navCreate')
@@ -39,9 +38,14 @@ navButton3.addEventListener('click', () => {
   heading.textContent = 'CREATE QUESTION'
 })
 
-const quizCards = document.querySelectorAll('[data-js="quiz-card"]')
 quizCards.forEach(quizCard => {
+  const solutionButton = quizCard.querySelector('[data-js="solution-button"]')
+  const solution = quizCard.querySelector('[data-js="solution"]')
   const iconBookmark = quizCard.querySelector('[data-js="icon-bookmark"]')
+
+  solutionButton.addEventListener('click', () => {
+    solution.classList.toggle('hidden')
+  })
   iconBookmark.addEventListener('click', () => {
     iconBookmark.classList.toggle('fas')
     iconBookmark.classList.toggle('far')
@@ -51,11 +55,3 @@ quizCards.forEach(quizCard => {
 function getElement(dataJsName) {
   return document.querySelector(`[data-js="${dataJsName}"]`)
 }
-
-quizCards.forEach(quizCard => {
-  const solutionButton = quizCard.querySelector('[data-js="solution-button"]')
-  const solution = quizCard.querySelector('[data-js="solution"]')
-  solutionButton.addEventListener('click', () => {
-    solution.classList.toggle('hidden')
-  })
-})
