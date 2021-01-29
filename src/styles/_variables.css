@@ -1,8 +1,9 @@
 :root {
   --color-violet: #606efe;
-  --color-lightviolet: #8f98ff;
+  --color-lightviolet: #afb6ff;
   --color-white: #fff;
   --color-lightgrey: #e6e6e6;
+  --color-grey: #adadad;
   --color-dark: #1e2125;
   --dropShadow-black: rgba(0, 0, 0, 0.2);
 }

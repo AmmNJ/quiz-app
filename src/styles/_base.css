@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'Avenir Next', sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   font-size: 112.5%;
   line-height: 1.5;
   margin: 0;
@@ -15,13 +15,26 @@ h1,
 h2,
 h3 {
   line-height: 1.3;
+  text-transform: uppercase;
 }
 
 input,
 button {
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
 a {
   text-decoration: none;
+}
+
+label {
+  display: grid;
+}
+
+hr {
+  margin: 10px 0;
+  border-top: 2px;
+  border-style: none;
+  border-top-style: dotted;
+  color: var(--color-lightgrey);
 }
