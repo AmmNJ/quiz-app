@@ -1,16 +1,43 @@
 <main data-js="main-create" class="app-grid__main">
+  <h2 class="create-heading">Share your knowledge</h2>
+  <hr />
   <form class="create-question-container" action="#">
-    <label class="label-heading">
-      Enter your Question:
-      <input class="add-question" type="text" />
+    <label for="Question" class="label-heading">
+      Add Question:
+      <textarea
+        data-js="textarea-add-question"
+        id="Question"
+        class="create-textarea"
+        autofocus
+        rows="3"
+        placeholder="Is !false equal to true?"
+        maxlength="200"
+      ></textarea>
+      <span data-js="characters-limit-question" class="characters-limit"
+        >dew</span
+      >
     </label>
-    <label class="label-heading">
-      Enter your Answer:
-      <input class="add-answer" />
+    <label for="Answer" class="label-heading">
+      Add Answer:
+      <textarea
+        data-js="textareaAddAnswer"
+        id="Answer"
+        class="create-textarea"
+        autofocus
+        rows="3"
+        placeholder="It might be !false."
+        maxlength="200"
+      ></textarea>
     </label>
-    <label class="label-heading">
-      Give it some Tags:
-      <input class="add-tags" />
+    <label for="Tags" class="label-heading">
+      Tags:
+      <textarea
+        id="Tags"
+        class="create-textarea"
+        autofocus
+        rows="3"
+        placeholder="Coding, Programming, ..."
+      ></textarea>
     </label>
     <button class="submit-button" type="submit">SUBMIT</button>
   </form>

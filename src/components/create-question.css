@@ -1,23 +1,32 @@
 .create-question-container {
   display: grid;
-  padding: 10px;
   gap: 10px;
+}
+
+.create-heading {
+  font-size: 16px;
+  margin: 0;
+  padding: 5px;
+  color: var(--color-grey);
 }
 
 .label-heading {
   font-size: 14px;
   font-weight: 600;
-  /* text-align: center; */
 }
 
-.add-question {
-  height: 100px;
+.create-textarea {
   padding: 10px;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  outline: none;
+  border: 2px solid var(--color-lightgrey);
+  border-radius: 8px;
 }
 
-.add-answer {
-  height: 100px;
-  padding: 10px;
+.create-textarea:focus {
+  outline: none;
+  border: 2px solid var(--color-lightviolet);
 }
 
 .add-tags {
@@ -32,4 +41,12 @@
   border-radius: 8px;
   border: none;
   width: 120px;
+  font-size: 14px;
+}
+
+.characters-limit {
+  text-align: end;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--color-grey);
 }

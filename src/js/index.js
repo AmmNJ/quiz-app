@@ -7,6 +7,9 @@ const navButton1 = getElement('navHome')
 const navButton2 = getElement('navBookmark')
 const navButton3 = getElement('navCreate')
 const navButton4 = getElement('navSettings')
+const textareaAddQuestion = getElement('textarea-add-question')
+const textareaAddAnswer = getElement('textarea-add-answer')
+const textareaAddTags = getElement('textarea-add-tags')
 
 navButton1.addEventListener('click', () => {
   pageHome.classList.remove('hidden')
@@ -36,6 +39,7 @@ navButton3.addEventListener('click', () => {
   navButton2.classList.remove('navbar__item--active')
   navButton3.classList.add('navbar__item--active')
   heading.textContent = 'CREATE QUESTION'
+  textareaAddQuestion.autofocus
 })
 
 quizCards.forEach(quizCard => {
@@ -55,3 +59,27 @@ quizCards.forEach(quizCard => {
 function getElement(dataJsName) {
   return document.querySelector(`[data-js="${dataJsName}"]`)
 }
+
+const charactersLimitQuestion = getElement('characters-limit-question')
+textareaAddQuestion.addEventListener('input', () => {
+  const maxCharacters = 100
+  const charactersUsed = textareaAddQuestion.value.length
+  const charactersLeft = maxCharacters - charactersUsed
+  charactersLimitQuestion.textContent = charactersUsed + ' / ' + charactersLeft
+})
+
+const charactersLimitAnswer = getElement('characters-limit-answer')
+textareaAddAnswer.addEventListener('input', () => {
+  const maxCharacters = 100
+  const charactersUsed = textareaAddAnswer.value.length
+  const charactersLeft = maxCharacters - charactersUsed
+  charactersLimitAnswer.textContent = charactersUsed + ' / ' + charactersLeft
+})
+
+const charactersLimitTags = getElement('characters-limit-tags')
+textareaAddTags.addEventListener('input', () => {
+  const maxCharacters = 50
+  const charactersUsed = textareaAddTags.value.length
+  const charactersLeft = maxCharacters - charactersUsed
+  charactersLimitTags.textContent = charactersUsed + ' / ' + charactersLeft
+})
