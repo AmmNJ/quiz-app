@@ -21,17 +21,19 @@
   font-size: 16px;
   margin: 0;
   padding: 5px;
+  color: var(--color-grey);
 }
 
 .quiz-card__question {
-  font-size: 16px;
-  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  /* text-align: center; */
 }
 
 .quiz-card__solution {
-  font-size: 16px;
+  font-size: 14px;
   display: grid;
-  justify-items: center;
+  /* justify-items: center; */
 }
 
 .quiz-card__button {
@@ -40,6 +42,8 @@
   padding: 10px;
   border-radius: 8px;
   border: none;
+  width: 120px;
+  place-items: center;
 }
 
 .quiz-card__tag-area {
