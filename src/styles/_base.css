@@ -32,9 +32,13 @@ label {
 }
 
 hr {
-  margin: 10px 0;
+  margin: 10px 0 20px;
   border-top: 2px;
   border-style: none;
   border-top-style: dotted;
   color: var(--color-lightgrey);
+}
+
+p {
+  margin: 0;
 }

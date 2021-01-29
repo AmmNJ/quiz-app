@@ -27,13 +27,13 @@
 .quiz-card__question {
   font-size: 14px;
   font-weight: 600;
-  /* text-align: center; */
 }
 
 .quiz-card__solution {
   font-size: 14px;
   display: grid;
-  /* justify-items: center; */
+  gap: 20px;
+  margin: 20px 0 20px;
 }
 
 .quiz-card__button {
