@@ -38,6 +38,15 @@ navButton3.addEventListener('click', () => {
   heading.textContent = 'CREATE QUESTION'
 })
 
+const quizCards = document.querySelectorAll('[data-js="quiz-card"]')
+quizCards.forEach(quizCard => {
+  const iconBookmark = quizCard.querySelector('[data-js="icon-bookmark"]')
+  iconBookmark.addEventListener('click', () => {
+    iconBookmark.classList.toggle('fas')
+    iconBookmark.classList.toggle('far')
+  })
+})
+
 function getElement(dataJsName) {
   return document.querySelector(`[data-js="${dataJsName}"]`)
 }
