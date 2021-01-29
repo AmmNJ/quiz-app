@@ -2,6 +2,7 @@ const heading = getElement('universal-header')
 const pageHome = getElement('main-home')
 const pageBookmark = getElement('main-bookmark')
 const pageCreate = getElement('main-create')
+const quizCards = document.querySelectorAll('[data-js="quiz-card"]')
 
 const navButton1 = getElement('navHome')
 const navButton2 = getElement('navBookmark')
@@ -41,3 +42,11 @@ navButton3.addEventListener('click', () => {
 function getElement(dataJsName) {
   return document.querySelector(`[data-js="${dataJsName}"]`)
 }
+
+quizCards.forEach(quizCard => {
+  const solutionButton = quizCard.querySelector('[data-js="solution-button"]')
+  const solution = quizCard.querySelector('[data-js="solution"]')
+  solutionButton.addEventListener('click', () => {
+    solution.classList.toggle('hidden')
+  })
+})
