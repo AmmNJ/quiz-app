@@ -107,22 +107,55 @@
       </section>
     </main>
     <main data-js="main-create" class="app-grid__main hidden">
+      <h2 class="create-heading">Share your knowledge</h2>
+      <hr />
       <form class="create-question-container" action="#">
-        <label class="label-heading">
-          Enter your Question:
-          <input class="add-question" type="text" />
+        <label for="Question" class="label-heading">
+          Add Question:
+          <textarea
+            data-js="textarea-add-question"
+            id="Question"
+            class="create-textarea"
+            rows="3"
+            placeholder="Is !false equal to true?"
+            maxlength="100"
+          ></textarea>
+          <span data-js="characters-limit-question" class="characters-limit"
+            >0 / 100</span
+          >
         </label>
-        <label class="label-heading">
-          Enter your Answer:
-          <input class="add-answer" />
+        <label for="Answer" class="label-heading">
+          Add Answer:
+          <textarea
+            data-js="textarea-add-answer"
+            id="Answer"
+            class="create-textarea"
+            rows="3"
+            placeholder="It might be !false."
+            maxlength="100"
+          ></textarea>
+          <span data-js="characters-limit-answer" class="characters-limit"
+            >0 / 100</span
+          >
         </label>
-        <label class="label-heading">
-          Give it some Tags:
-          <input class="add-tags" />
+        <label for="Tags" class="label-heading">
+          Tags:
+          <textarea
+            data-js="textarea-add-tags"
+            id="Tags"
+            class="create-textarea"
+            rows="3"
+            placeholder="Coding, Programming, ..."
+            maxlength="50"
+          ></textarea>
+          <span data-js="characters-limit-tags" class="characters-limit"
+            >0 / 50</span
+          >
         </label>
         <button class="submit-button" type="submit">SUBMIT</button>
       </form>
     </main>
+
     <footer class="footer">
       <nav class="navbar">
         <a
