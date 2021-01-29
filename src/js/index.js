@@ -39,7 +39,7 @@ navButton3.addEventListener('click', () => {
   navButton2.classList.remove('navbar__item--active')
   navButton3.classList.add('navbar__item--active')
   heading.textContent = 'CREATE QUESTION'
-  textareaAddQuestion.autofocus
+  textareaAddQuestion.focus()
 })
 
 quizCards.forEach(quizCard => {
